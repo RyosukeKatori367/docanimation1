@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    font-size: 1.1rem;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right,rgb(50,50,100),rgb(30,30,50));
+    overflow: hidden;
+    font-family: "Onest", sans-serif;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    align-items: center;
+    font-weight: 450;
+    justify-content: space-between;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links li {
+    list-style: none;
+}
+.logo-area {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.logo-area h2 {
+    width: 81%;
+}
+.logo {
+    width: 15%;
+    height: 20%;
+    margin-right: 20px;
+}
+.nav-links ul li {
+    display: inline-block;
+    padding: 0 1.9rem;
+}
+.nav-links ul a {
+    font-weight: 600px;
+    color: white;
+    text-decoration: none;
+    transition: 0.15s;
+}
+.nav-links ul a:hover {
+    color: rgb(200,200,200);
+}
+.imformation {
+    width: 900px;
+    height:900px;
+
+    position:absolute;
+    top: 50% ;
+    left: -10%;
+    transform: translateY(-50%);
+} 
+#circle {
+    height: 900px;
+    width: 900px;
+    position:absolute;
+    /* background: #ccc; */
+    border-radius: 50%;
+    top:0;
+    left:0;
+    transform: rotate(0deg);
+    transition: transform 1s cubic-bezier(.81,.01,.21,1);
+}
+
+.feature {
+    position: absolute;
+    color:white;
+    display:flex;
+}
+.one {
+    top:420px;
+    right:70px;
+
+    
+}
+.feature img {
+    height: 75px;
+    width: auto;
+    margin-right:10px;
+}
+.feature div a {
+    margin-top: 8px;
+    margin-left:10px;
+}
+.two {
+    top: 50px;
+    left: 290px;
+    transform: rotate(-90deg);
+}
+.three {
+    top:410px;
+    left:20px;
+    transform: rotate(-180deg);
+}
+.four {
+    top:800px;
+    left:250px;
+    transform: rotate(-270deg);
+}
+.youtube {
+    width:200px;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    left:350px;
+    z-index: 2;
+}
+.control {
+    position: absolute;
+    top: 50%; 
+    right: 15%;
+    transform: translateY(-50%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:#ccc;
+
+}
+.control h3 {
+    padding: 20px;
+}
+#upBtn {
+    cursor: pointer;
+    height: 20px;
+}
+#downBtn {
+    height: 20px;
+    cursor: pointer;
+    transform: rotate(-180deg);
+}
+.overlay {
+    z-index: 1;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: -70px;
+    left: -70px;
+    border-top: 520px solid white;
+    border-right: 520px solid transparent;
+    border-left: 520px solid white;
+    border-bottom: 520px solid white;
+}
